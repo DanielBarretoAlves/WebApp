@@ -1,0 +1,77 @@
+artes = '[{
+"NOME": "ARTHUR PAGONOZZI DITCHFIELD",
+"p1": 6.0,
+"p2": 1.20
+}, {
+    "NOME": "AUGUSTO CAO GIESTAS DE OLIVEIRA",
+    "p1": 10.0,
+    "p2": 5.0
+}, {
+    "NOME": "CAROLINE DE OLIVEIRA COSTA",
+    "p1": 10.0,
+    "p2": 7.30
+}, {
+    "NOME": "CLARA RIBEIRO SOUZA DE LIMA FREITAS",
+    "p1": 10.0,
+    "p2": 7.50
+}, {
+    "NOME": "FELIPE LIMA DE MAGALHAES CASTRO",
+    "p1": 10.0,
+    "p2": 4.25
+}, {
+    "NOME": "GABRIELA SALIBA DE ALMEIDA",
+    "p1": 10.0,
+    "p2": 3.75
+}, {
+    "NOME": "GIOVANA LEITE DE CASTRO MOARES",
+    "p1": 10.0,
+    "p2": 5.55
+}, {
+    "NOME": "ISABELA VIGUINI DAHER",
+    "p1": 10.0,
+    "p2": 6.25
+}, {
+    "NOME": "ISADORA AMORIM",
+    "p1": 10.0,
+    "p2": 7.0
+}, {
+    "NOME": "JOAO VICTOR COVRE LIMA",
+    "p1": 10.0,
+    "p2": 7.80
+}, {
+    "NOME": "LAURA DALVI CALAZANS",
+    "p1": 10.0,
+    "p2": 5.75
+}, {
+    "NOME": "LUCA FRIETAS LANES VICENTINI",
+    "p1": 10.0,
+    "p2": 6.80
+}, {
+    "NOME": "MARIA EDUARDA FERREIRA DE OLIVEIRA OLINDO",
+    "p1": 10.0,
+    "p2": 5.80
+}, {
+    "NOME": "MEL CAMPAGNARO",
+    "p1": 10.0,
+    "p2": 2.75
+}, {
+    "NOME": "TAINA ZAGO CYPRESETE",
+    "p1": 10.0,
+    "p2": 4.02
+}, {
+    "NOME": "MURILO PATRICIO NASCIMENTO",
+    "p1": 10.0,
+    "p2": 7.40
+}, {
+    "NOME": "SOPHIA AYMEE PERUCH RODRIGUES",
+    "p1": 0.0,
+    "p2": 0.0
+}, {
+    "NOME": "VITOR KALIL DE FREITAS",
+    "p1": 10.0,
+    "p2": 5.75
+}
+
+]
+
+';
