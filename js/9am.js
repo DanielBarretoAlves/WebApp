@@ -1,15 +1,25 @@
 function getAlunoslist9A() {
     var myObj = data;
-    var x = ""
-
+    var x = "";
     for (i = 0; i < myObj.ARTES.length; i++) {
-        x += ' <li class="list-group-item bg-dark" class="alunoInList id="alunoPos' + i + '>' + myObj.ARTES[i].nome + '</li>';
-        // if (myObj.ARTES[i].nome == "MEL CAMPAGNARO") {
-        //     var y = "";
-        //     y += myObj.ARTES[i].p1;
-        //     alert(y);
-
-        // }
+        x += ' <li class="list-group-item bg-dark" class="alunoInList id="alunoPos' + i + '>' + myObj.CIENCIAS[i].nome + '</li>';
     }
     document.getElementById("alunosList").innerHTML = x.toLowerCase();
 }
+var selectedAluno;
+
+function bt(){
+	<a href="index.html">
+}
+
+/* fuc lista 
+var materias = kkkkkk 
+
+f x
+
+selAll = das
+
+fy sel matre
+
+
+*/
