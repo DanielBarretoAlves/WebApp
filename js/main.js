@@ -1,37 +1,40 @@
-// function getAlunoslist9A() {
-//     var myObj = data9am;
-//     var x = "";
-//     for (i = 0; i < myObj.ARTES.length; i++) {
-//         x += ' <li class="list-group-item bg-dark" class="alunoInList id="alunoPos' + i + '>' + myObj.CIENCIAS[i].NOME + '</li>';
-//     }
-//     document.getElementById("alunosList").innerHTML = x.toLowerCase();
-// }
-// function getP1(al) {
-//     var myObj = data9am;
+var class9AM =  data9am;
+var class9BM = data9bm;
+var class8AM = data8am;
+var class8BM = data8bm;
+var class7AM = data7am;
+var class7BM = data7bm;
+var class6AM = data6am;
+var class6BM = data6bm;
 
-// }
+setInterval(function checkPosition() {
+    
+    if (window.matchMedia('(max-width: 900px)').matches) {
+        $(".setBigger").css("width:90%;");
+    } else {
+        // TEla Grande
+    }
+}, 3000)
 
-
-$("#test2").click(function() {
-
-    var myObj = data9am;
-    var x = "";
-    for (i = 0; i < myObj.ARTES.length; i++) {
-        // x += ' <li class="list-group-item bg-dark" class="alunoInList id="alunoPos' + i + '>' + myObj.CIENCIAS[i].NOME + '</li>';
-        var txt = '<option value="' + i + '" >' + myObj.CIENCIAS[i].NOME + ' </option>';
-        $("#listAlunos").append(txt);
+$("#showStudents").click(function() {
+  for (i = 0; i < class9AM.ARTES.length; i++) {
+       var txt = '<p value="' + i + '" >' + class9AM.CIENCIAS[i].NOME + ' </p>';
+         $("#all").append(txt);
 
     }
-    $("#testGet").click(function() {
-        var al = $("#listAlunos").val();
-        $("#listAlunos").after("Prova 2: " + myObj.CIENCIAS[al].p2);
-        $("#listAlunos").after("<br>");
-        $("#listAlunos").after("Prova 1: " + myObj.CIENCIAS[al].p1);
-        $("#listAlunos").after("<br>");
-        $("#listAlunos").after("Nome: " + myObj.CIENCIAS[al].NOME);
-        $("#listAlunos").after("<br>");
-    })
+    alert(class9AM.CIENCIAS[0].NOME + " " + class9AM.CIENCIAS[0].p1)
+   
 
 
 
-});
+ });
+
+//  $("#all").click(function() {
+//     var al = $("#all").val();
+//      $("#all").after("Prova 2: " + class9AM.CIENCIAS[al].p2);
+//      $("#all").after("<br>");
+//       $("#all").after("Prova 1: " + class9AM.CIENCIAS[al].p1);
+//       $("#all").after("<br>");
+//       $("#all").after("Nome: " + class9AM.CIENCIAS[al].NOME);
+//      $("#all").after("<br>");
+//   })
