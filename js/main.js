@@ -94,15 +94,18 @@ function getNotas() {
         pt2 = classe.PORTUGUES[alunoIndex].p2;
         ciep1 = classe.CIENCIAS[alunoIndex].p1;
         ciep2 = classe.CIENCIAS[alunoIndex].p2;
-        edp1 = classe.EDUCACAO FISICA[alunoIndex].p1;
-        edp2 = classe.EDUCACAO FISICA[alunoIndex].p2;
+        edp1 = classe.EDUCACAOFISICA[alunoIndex].p1;
+        edp2 = classe.EDUCACAOFISICA[alunoIndex].p2;
         esp1 = classe.ESPANHOL[alunoIndex].p1;
         esp2 = classe.ESPANHOL[alunoIndex].p2;
         filop1 = classe.FILOSOFIA[alunoIndex].p1;
         filop2 = classe.FILOSOFIA[alunoIndex].p2;
         geop1 = classe.GEOGRAFIA[alunoIndex].p1;
         geop2 = classe.GEOGRAFIA[alunoIndex].p2;
-        his
+        hisp1 = classe.HISTORIA[alunoIndex].p1;
+        hisp2 = classe.HISTORIA[alunoIndex].p2;
+        ingp1 = classe.INGLES[alunoIndex].p1;
+        ingp2 = classe.INGLES[alunoIndex].p2;
 
 
     }
@@ -117,11 +120,12 @@ function getNotas() {
     //      $("#all").after("<br>");
     //   })
 
-    setInterval(function checkPosition() {
+    // setInterval(function checkPosition() {
 
-        if (window.matchMedia('(max-width: 900px)').matches) {
-            $(".setBigger").css("width:90%;");
-        } else {
-            // TEla Grande
-        }
-    }, 3000)
+    //     if (window.matchMedia('(max-width: 900px)').matches) {
+    //         $(".setBigger").css("width:90%;");
+    //     } else {
+    //         // TEla Grande
+    //     }
+    // }, 3000)
+}
