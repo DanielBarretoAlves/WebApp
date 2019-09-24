@@ -75,6 +75,8 @@ function showStudentonCard() {
         $("#dataSection").append("<br />")
         $("#dataSection").append('<button type="button " class="btn btn-primary btn-lg btn-block" id="moreInfo" >Mais</button>')
         alunoONCard = true;
+        getNotas();
+        mediaGeral();
     } else {
         $("#dataSection").empty();
         alunoONCard = false;
