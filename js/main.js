@@ -34,7 +34,14 @@ var ingp1;
 var ingp2;
 var selectedClass = false;
 var turmas = [class9AM, class9BM, class8AM, class8BM, class7AM, class7BM, class6AM, class6BM];
+
+
+$("#homebt").click(function() {
+    localStorage.clear();
+    location.href = "index.html";
+});
 $("#showClasses").click(function() {
+    $("#listButtonArea").empty();
     $("#selectArea").empty();
     if (selectedClass != true) {
         // for (let index = 0; index < turmas.length; index++) {

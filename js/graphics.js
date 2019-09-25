@@ -42,6 +42,8 @@ function drawChart() {
                 fontName: 'Times-Roman',
                 fontSize: 18,
                 bold: true,
+
+                // width: 100,
                 italic: true,
                 // The color of the text.
                 color: '#871b47',
