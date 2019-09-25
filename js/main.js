@@ -87,7 +87,9 @@ function showStudents() {
 
 
 
-
+function showData() {
+    location.href = "data.html";
+}
 
 function showStudentonCard() {
     if (alunoONCard != true) {
@@ -96,7 +98,7 @@ function showStudentonCard() {
         $("#dataSection").append("<br />")
         $("#dataSection").append("<b>Rendimento Geral - </b> " + mediaAlunoG + " %");
         $("#dataSection").append("<br />")
-        $("#dataSection").append('<button type="button " class="btn btn-primary btn-lg btn-block" id="moreInfo" >Mais</button>')
+        $("#dataSection").append('<button type="button " class="btn btn-primary btn-lg btn-block" id="moreInfo" onclick="showData()" >Mais</button>')
             // alunoONCard = true;
             // getNotas();
             // mediaGeral();
@@ -130,8 +132,39 @@ function getNotas() {
         hisp2 = classe.HISTORIA[alunoIndex].p2;
         ingp1 = classe.INGLES[alunoIndex].p1;
         ingp2 = classe.INGLES[alunoIndex].p2;
+
+
+        //TODO Storage
+
+        // Armazenar
+        localStorage.setItem("nomeAluno", classe.MATEMATICA[alunoIndex].NOME);
+        localStorage.setItem("matp1", classe.MATEMATICA[alunoIndex].p1);
+        localStorage.setItem("matp2", classe.MATEMATICA[alunoIndex].p2);
+        localStorage.setItem("pt1", classe.PORTUGUES[alunoIndex].p1);
+        localStorage.setItem("pt2", classe.PORTUGUES[alunoIndex].p2);
+        localStorage.setItem("ciep1", classe.CIENCIAS[alunoIndex].p1);
+        localStorage.setItem("ciep2", classe.CIENCIAS[alunoIndex].p2);
+        localStorage.setItem("edp1", classe.EDUCACAOFISICA[alunoIndex].p1);
+        localStorage.setItem("edp2", classe.EDUCACAOFISICA[alunoIndex].p2);
+        localStorage.setItem("esp1", classe.ESPANHOL[alunoIndex].p1);
+        localStorage.setItem("esp2", classe.ESPANHOL[alunoIndex].p2);
+        localStorage.setItem("filop1", classe.FILOSOFIA[alunoIndex].p1);
+        localStorage.setItem("filop2", classe.FILOSOFIA[alunoIndex].p2);
+        localStorage.setItem("geop1", classe.GEOGRAFIA[alunoIndex].p1);
+        localStorage.setItem("geop2", classe.GEOGRAFIA[alunoIndex].p2);
+        localStorage.setItem("hisp1", classe.HISTORIA[alunoIndex].p1);
+        localStorage.setItem("hisp2", classe.HISTORIA[alunoIndex].p2);
+        localStorage.setItem("ingp1", classe.INGLES[alunoIndex].p1);
+        localStorage.setItem("ingp2", classe.INGLES[alunoIndex].p2);
+
+
+        // localStorage.setItem("matp1", "variableContent")
+        // Obter
+        // nomeTela = localStorage.getItem(matp1);
+        //Limpar
+        // localStorage.clear();
         //TODO ARTES
-        alert(ciep1);
+        // alert(ciep1);
 
         // alert(edp1)
         mediaGeral();
