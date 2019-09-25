@@ -1,3 +1,7 @@
+login = {
+    "NOME": "Monteiro",
+    "Senha": "admin"
+}
 data9am = {
     "ARTES": [{
             "NOME": "ARTHUR PAGONOZZI DITCHFIELD",

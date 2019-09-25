@@ -181,6 +181,10 @@ function getNotas() {
 
 
     }
+    $("#btIn").click(function() {
+        var usname = $("#usInp");
+
+    })
 
     //  $("#all").click(function() {
     //     var al = $("#all").val();
