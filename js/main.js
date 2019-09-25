@@ -182,7 +182,8 @@ function getNotas() {
 
     }
     $("#btIn").click(function() {
-        var usname = $("#usInp");
+        // var usname = $("#usInp");
+        location.href = "index.html";
 
     })
 
