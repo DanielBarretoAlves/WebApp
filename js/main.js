@@ -32,30 +32,58 @@ var hisp1;
 var hisp2;
 var ingp1;
 var ingp2;
+var selectedClass = false;
+var turmas = [class9AM, class9BM, class8AM, class8BM, class7AM, class7BM, class6AM, class6BM];
+$("#showClasses").click(function() {
+    $("#selectArea").empty();
+    if (selectedClass != true) {
+        // for (let index = 0; index < turmas.length; index++) {
 
 
-$("#showStudents").click(function() {
+        // }
+
+        $("#selectArea").append('<option value="0" > Turma 9AM </option>');
+        $("#selectArea").append('<option value="1" > Turma 9BM </option>');
+        $("#selectArea").append('<option value="2" > Turma 8AM </option>');
+        $("#selectArea").append('<option value="3" > Turma 8BM </option>');
+        $("#selectArea").append('<option value="4" > Turma 7AM </option>');
+        $("#selectArea").append('<option value="5" > Turma 7BM </option>');
+        $("#selectArea").append('<option value="6" > Turma 6AM </option>');
+        $("#selectArea").append('<option value="7" > Turma 6BM </option>');
+        $("#listButtonArea").append("<button type='button' class='btn btn-success btn-lg btn-block' onclick='getTuma()'>Selecionar Turma</button>");
+    } else {
+
+    }
+})
+
+function getTuma() {
+    classe = turmas[$("#selectArea").val()];
+    $("#listButtonArea").empty();
+    showStudents()
+}
+// TODO
+function showStudents() {
+    $("#selectArea").empty();
+    $("#selectStudent").remove();
     $("#dataSection").empty();
-    var alunoONCard = false;
+    $("#selectArea").empty();
+    // var alunoONCard = false;
 
     if (showAluno != true) {
         var botao = "<button type='button' class='btn btn-success btn-lg btn-block' id='selectStudent' onclick='getNotas()'>Selecionar Aluno</button>"
-        for (i = 0; i < classe.CIENCIAS.length; i++) {
-            var txt = '<option value="' + i + '" >' + i + " - " + classe.CIENCIAS[i].NOME + ' </option>';
+        for (i = 0; i < classe.MATEMATICA.length; i++) {
+            var txt = '<option value="' + i + '" >' + i + " - " + classe.MATEMATICA[i].NOME + ' </option>';
             $("#selectArea").append(txt);
 
         }
-        $("#listSection").append(botao);
+        $("#listButtonArea").append(botao);
         // alert(class9AM.MATEMATICA[0].NOME + " " + class9AM.MATEMATICA[0].p1)
-        showAluno = true;
+        // showAluno = true;
     } else {
-        $("#selectArea").empty();
-        $("#selectStudent").remove();
-        showAluno = false;
+
+        // showAluno = false;
     }
-
-});
-
+}
 
 
 
@@ -69,12 +97,12 @@ function showStudentonCard() {
         $("#dataSection").append("<b>Rendimento Geral - </b> " + mediaAlunoG + " %");
         $("#dataSection").append("<br />")
         $("#dataSection").append('<button type="button " class="btn btn-primary btn-lg btn-block" id="moreInfo" >Mais</button>')
-        alunoONCard = true;
-        // getNotas();
-        // mediaGeral();
+            // alunoONCard = true;
+            // getNotas();
+            // mediaGeral();
     } else {
         $("#dataSection").empty();
-        alunoONCard = false;
+        // alunoONCard = false;
     }
 
 }
@@ -83,8 +111,7 @@ function getNotas() {
     if (alunoONCard != true) {
         var alunoIndex = $("#selectArea").val();
 
-        nomeAluno = class9AM.MATEMATICA[alunoIndex].NOME;
-
+        nomeAluno = classe.MATEMATICA[alunoIndex].NOME;
         matp1 = classe.MATEMATICA[alunoIndex].p1;
         matp2 = classe.MATEMATICA[alunoIndex].p2;
         pt1 = classe.PORTUGUES[alunoIndex].p1;
@@ -103,8 +130,13 @@ function getNotas() {
         hisp2 = classe.HISTORIA[alunoIndex].p2;
         ingp1 = classe.INGLES[alunoIndex].p1;
         ingp2 = classe.INGLES[alunoIndex].p2;
+        //TODO ARTES
+        alert(ciep1);
+
         // alert(edp1)
         mediaGeral();
+        $("#listButtonArea").empty();
+        $("#selectArea").empty();
         showStudentonCard()
 
 
