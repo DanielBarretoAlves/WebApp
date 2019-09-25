@@ -3,7 +3,7 @@ var mediaAlunoG;
 function mediaGeral() {
 
     mediaAlunoG = (matp1 + matp2 + pt1 + pt2 + ciep1 + ciep2 + edp1 + edp2 + esp1 + esp2 + filop1 + filop2 + geop1 + geop2 + hisp1 + hisp2 + ingp1 + ingp2) / 17;
-    alert(mediaAlunoG);
+    // alert(mediaAlunoG);
 }
 
 // var matp1;
