@@ -32,6 +32,8 @@ var hisp1;
 var hisp2;
 var ingp1;
 var ingp2;
+var artp1;
+var artp2;
 var selectedClass = false;
 var turmas = [class9AM, class9BM, class8AM, class8BM, class7AM, class7BM, class6AM, class6BM];
 
@@ -139,6 +141,8 @@ function getNotas() {
         hisp2 = classe.HISTORIA[alunoIndex].p2;
         ingp1 = classe.INGLES[alunoIndex].p1;
         ingp2 = classe.INGLES[alunoIndex].p2;
+        artp1 = classe.ARTES[alunoIndex].p1;
+        artp2 = classe.ARTES[alunoIndex].p2;
 
 
         //TODO Storage
@@ -163,6 +167,8 @@ function getNotas() {
         localStorage.setItem("hisp2", classe.HISTORIA[alunoIndex].p2);
         localStorage.setItem("ingp1", classe.INGLES[alunoIndex].p1);
         localStorage.setItem("ingp2", classe.INGLES[alunoIndex].p2);
+        localStorage.setItem("artp1", classe.ARTES[alunoIndex].p1);
+        localStorage.setItem("artp2", classe.ARTES[alunoIndex].p2);
 
 
         // localStorage.setItem("matp1", "variableContent")
@@ -182,8 +188,7 @@ function getNotas() {
 
     }
     $("#btIn").click(function() {
-        // var usname = $("#usInp");
-        location.href = "index.html";
+        var usname = $("#usInp");
 
     })
 

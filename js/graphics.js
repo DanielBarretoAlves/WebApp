@@ -18,6 +18,10 @@ hisp1 = localStorage.getItem("hisp1");
 hisp2 = localStorage.getItem("hisp2");
 ingp1 = localStorage.getItem("ingp1");
 ingp2 = localStorage.getItem("ingp2");
+esp1 = localStorage.getItem("esp1");
+esp2 = localStorage.getItem("esp2");
+artp1 = localStorage.getItem("artp1");
+artp2 = localStorage.getItem("artp2");
 
 
 function drawChart() {
@@ -29,6 +33,7 @@ function drawChart() {
         ['Ciencias', parseFloat(ciep1), parseFloat(ciep2)],
         ['Educacao Fisica', parseFloat(edp1), parseFloat(edp2)],
         ['Espanhol', parseFloat(esp1), parseFloat(esp2)],
+        ['Artes', parseFloat(artp1), parseFloat(artp2)],
         ['Filosofia', parseFloat(filop1), parseFloat(filop2)],
         ['Geografia', parseFloat(geop1), parseFloat(geop2)],
         ['Historia', parseFloat(hisp1), parseFloat(hisp2)],
