@@ -44,6 +44,11 @@ $("#showClasses").click(function() {
     $("#listButtonArea").empty();
     $("#selectArea").empty();
     if (selectedClass != true) {
+        // for (let index = 0; index < turmas.length; index++) {
+
+
+        // }
+
         $("#selectArea").append('<option value="0" > Turma 9AM </option>');
         $("#selectArea").append('<option value="1" > Turma 9BM </option>');
         $("#selectArea").append('<option value="2" > Turma 8AM </option>');
@@ -61,7 +66,6 @@ $("#showClasses").click(function() {
 function getTuma() {
     classe = turmas[$("#selectArea").val()];
     $("#listButtonArea").empty();
-    localStorage.setItem("classe", classe);
     showStudents()
 }
 // TODO
@@ -97,7 +101,6 @@ function showData() {
 function showStudentonCard() {
     if (alunoONCard != true) {
         var alunoIndex = $("#selectArea").val();
-        localStorage.setItem("alunoIndex", alunoIndex);
         $("#dataSection").append("<b>Nome - </b> " + nomeAluno)
         $("#dataSection").append("<br />")
         $("#dataSection").append("<b>Rendimento Geral - </b> " + mediaAlunoG + " %");
@@ -178,10 +181,11 @@ function getNotas() {
 
 
     }
+    $("#btIn").click(function() {
+        // var usname = $("#usInp");
+        location.href = "index.html";
 
-    function logIn() {
-
-    }
+    })
 
     //  $("#all").click(function() {
     //     var al = $("#all").val();

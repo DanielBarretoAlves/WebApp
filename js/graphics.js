@@ -1,5 +1,4 @@
 google.charts.load('current', { 'packages': ['bar'] });
-// google.charts.load("current", { packages: ["corechart"] });
 google.charts.setOnLoadCallback(drawChart);
 
 nomeAluno = localStorage.getItem("nomeAluno");
@@ -19,8 +18,6 @@ hisp1 = localStorage.getItem("hisp1");
 hisp2 = localStorage.getItem("hisp2");
 ingp1 = localStorage.getItem("ingp1");
 ingp2 = localStorage.getItem("ingp2");
-mediaAlunoG = localStorage.getItem("mediaAlunoG");
-alert(mediaAlunoG);
 
 
 function drawChart() {
@@ -59,9 +56,6 @@ function drawChart() {
     };
 
 
-
-
-
     var chart = new google.charts.Bar(document.getElementById('barchart_material'));
 
     chart.draw(data, google.charts.Bar.convertOptions(options));
@@ -69,22 +63,3 @@ function drawChart() {
 //<div id="barchart_material" style="width: 900px; height: 500px;"></div>  no body
 
 //<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> no head
-
-// function drawChart() {
-//     var data = google.visualization.arrayToDataTable([
-//         ['Task', 'Hours per Day'],
-//         ['Work', 11],
-//         ['Eat', 2],
-//         ['Commute', 2],
-//         ['Watch TV', 2],
-//         ['Sleep', 7]
-//     ]);
-
-//     var options = {
-//         title: 'My Daily Activities',
-//         pieHole: 0.4,
-//     };
-
-//     var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
-//     chart.draw(data, options);
-// }
