@@ -14,11 +14,11 @@
 - [x] Get 6 AM Students
 - [x] Get 6 BM Students
 2. Technologies
-- [ ] Get jQuery Ready to Go
+- [x] Get jQuery Ready to Go
 
 3. Design
 
-- [ ] Improve Visual Features
+- [x] Improve Visual Features
 - [ ] Check About UI & UX
 - [ ] Check Accessibility
-- [ ] Remake de Layout of the page
+- [x] Remake de Layout of the page
