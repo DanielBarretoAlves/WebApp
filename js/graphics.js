@@ -1,6 +1,8 @@
 google.charts.load('current', { 'packages': ['bar'] });
 google.charts.setOnLoadCallback(drawChart);
 
+
+
 nomeAluno = localStorage.getItem("nomeAluno");
 matp1 = localStorage.getItem("matp1");
 matp2 = localStorage.getItem("matp2");
@@ -25,7 +27,7 @@ artp2 = localStorage.getItem("artp2");
 
 
 function drawChart() {
-
+    $("#nameSection").append('<p>Nome: ' + nomeAluno + ' </p>');
     var data = google.visualization.arrayToDataTable([
         ['Materia', 'Prova 1', 'Prova 2'],
         ['Matematica', parseFloat(matp1), parseFloat(matp2)],
@@ -65,6 +67,3 @@ function drawChart() {
 
     chart.draw(data, google.charts.Bar.convertOptions(options));
 }
-//<div id="barchart_material" style="width: 900px; height: 500px;"></div>  no body
-
-//<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> no head
