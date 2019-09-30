@@ -1653,93 +1653,93 @@ data9bm = {
     ],
     "PORTUGUES": [{
             "NOME": "ANA CAROLINA DE PAULA SIMOES",
-            "p1": 6.0,
-            "p2": 10.0
-        },
-        {
-            "NOME": "BEATRIZ BAIOCO VESCOVI",
-            "p1": 6.70,
+            "p1": 5.70,
             "p2": 9.50
         },
         {
+            "NOME": "BEATRIZ BAIOCO VESCOVI",
+            "p1": 6.90,
+            "p2": 7.50
+        },
+        {
             "NOME": "DIOGO IVAN CABALLERO OTAROLA",
-            "p1": 5.20,
-            "p2": 9.75
+            "p1": 4.10,
+            "p2": 9.0
         },
         {
             "NOME": "ELISA SEIXAS MELHEM",
-            "p1": 2.80,
-            "p2": 7.95
+            "p1": 6.40,
+            "p2": 9.30
         },
         {
             "NOME": "ERIK ZANDONADE DE OLIVEIRA",
-            "p1": 6.50,
-            "p2": 9.05
+            "p1": 5.80,
+            "p2": 9.40
         },
         {
             "NOME": "GABRIELA ZUCOLOTTO DE MENEZES",
-            "p1": 4.60,
-            "p2": 8.80
+            "p1": 4.50,
+            "p2": 7.0
         },
         {
             "NOME": "GUILHERME DUARTE MADEIRA",
-            "p1": 7.80,
-            "p2": 7.90
+            "p1": 4.30,
+            "p2": 9.60
         },
         {
             "NOME": "HENRIQUE PIMENTEL MARTINS ARRUDA",
-            "p1": 8.40,
-            "p2": 9.60
+            "p1": 5.60,
+            "p2": 6.80
         },
         {
             "NOME": "JOAO GABRIEL TAVARES PEREIRA",
             "p1": 5.20,
-            "p2": 8.0
+            "p2": 7.60
         },
         {
             "NOME": "JOAO HENRIQUE ANTUNES PAES TORRES",
             "p1": 3.40,
-            "p2": 1.40
+            "p2": 5.30
         },
         {
             "NOME": "JOAO VITOR BENIQUIO FERNANDES DE JESUS",
-            "p1": 4.0,
-            "p2": 9.05
+            "p1": 5.20,
+            "p2": 2.10
         },
         {
             "NOME": "LAURA DALVI CALAZANS",
-            "p1": 7.0,
-            "p2": 9.0
+            "p1": 5.30,
+            "p2": 7.50
         },
         {
             "NOME": "LUCA FRIETAS LANES VICENTINI",
-            "p1": 3.80,
-            "p2": 8.40
+            "p1": 4.0,
+            "p2": 6.20
         },
         {
             "NOME": "MARIA EDUARDA FERREIRA DE OLIVEIRA OLINDO",
-            "p1": 3.40,
-            "p2": 6.10
+            "p1": 5.80,
+            "p2": 4.40
         },
         {
             "NOME": "MEL CAMPAGNARO",
-            "p1": 4.10,
-            "p2": 1.0
+            "p1": 6.30,
+            "p2": 7.70
         },
         {
             "NOME": "TAINA ZAGO CYPRESETE",
-            "p1": 8.50,
-            "p2": 9.70
-        },
-        {
-            "NOME": "VALENTINA MANOELA SCHUWARTZ FERNANDES",
             "p1": 0.0,
             "p2": 0.0
         },
         {
+            "NOME": "VALENTINA MANOELA SCHUWARTZ FERNANDES",
+            "p1": 7.10,
+            "p2": 9.30
+        },
+        {
             "NOME": "VICENTE KOCK LENG VENADE DA COSTA",
-            "p1": 5.0,
-            "p2": 7.85
+            "p1": 5.20,
+            "p2": 9.20
         }
     ],
     "MATEMATICA": [{
