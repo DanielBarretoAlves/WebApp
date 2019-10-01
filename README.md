@@ -2,7 +2,7 @@
 # Class Manager System
 - To-Do
 
-- [ ] Select all Classes
+- [x] Select all Classes
 
 1. Students Files
 - [x] Get 9AM Students
