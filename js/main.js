@@ -144,9 +144,23 @@ function getNotas() {
         artp1 = classe.ARTES[alunoIndex].p1;
         artp2 = classe.ARTES[alunoIndex].p2;
 
+        //Alert Setar Notas Das Materias
+        apArt();
+        apCie();
+        apEsp();
+        // alert(artAprovados);
+        // alert(artReprovados);
+
+        localStorage.setItem("espAprovados", espAprovados);
+        localStorage.setItem("espReprovados", espReprovado);
+        localStorage.setItem("artAprovados", artAprovados);
+        localStorage.setItem("artReprovados", artReprovados);
+        localStorage.setItem("cieAprovados", cieAprovados);
+        localStorage.setItem("cieReprovados", cieReprovados);
+
 
         //TODO Storage
-
+        
         // Armazenar
         localStorage.setItem("nomeAluno", classe.MATEMATICA[alunoIndex].NOME);
         localStorage.setItem("matp1", classe.MATEMATICA[alunoIndex].p1);
